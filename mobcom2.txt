@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+
+
+
+class Birthday extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.purple,
+        title: Text('BirthDay Card'),
+      ),
+      body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image(height: 300,
+                  width: double.infinity,
+                  image: AssetImage('assets/image/day.jpeg')
+              ),
+              Text('Happy BirthDay to You!!',
+                style: TextStyle(fontSize: 30,color: Colors.indigo),
+              ),
+            ],
+          )
+      ),
+    );
+  }
+}
